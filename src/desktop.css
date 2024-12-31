@@ -1,0 +1,214 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsla(0, 5%, 92%, 0.77);
+}
+
+.container {
+    max-height: 1500px;
+    max-width: 1800px;
+    display: grid;
+    grid-template-areas:
+        "descricao7 descricao1 descricao1 descricao4"
+        "descricao7 descricao2 descricao3 descricao4"
+        "descricao8 descricao2 descricao3 descricao4"
+        "descricao8 descricao2 descricao3 descricao4"
+        "descricao8 descricao6 descricao5 descricao5";
+    grid-template-rows: 34% 12% 4% 11% 31%;
+    grid-template-columns: 1.1fr 1fr 1fr 1.1fr;
+    grid-gap: 10rem;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.descricao1 {
+    background-color: var(--purple-500);
+    grid-area: descricao1;
+}
+
+.descricao1 p,
+em {
+    color: var(--white);
+    font-size: calc(12rem + 1vw);
+    font-weight: 700;
+    text-align: center;
+    padding: calc(2rem + 1vw)
+}
+
+.descricao1 em {
+    padding: 0;
+}
+
+.descricao1 span {
+    color: var(--yellow-500);
+}
+
+.descricao1 img {
+    padding: 5px 25% 5px 25%;
+}
+
+.descricao1 .diminuir-fonte {
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
+    padding: 0;
+}
+
+.descricao2 {
+    background-color: var(--white);
+    grid-area: descricao2;
+    overflow: hidden;
+}
+
+.descricao2 p {
+    font-size: calc(3rem + 1vw);
+    font-weight: 700;
+    padding: 5rem;
+}
+
+.descricao2 img {
+    padding-top: 4rem;
+    max-width: 140%;
+}
+
+.descricao3 {
+    background-color: var(--yellow-500);
+    grid-area: descricao3;
+    overflow: hidden;
+    position: relative;
+}
+
+.descricao3 p {
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+    padding: 5rem;
+}
+
+.descricao3 img {
+    width: 90%;
+    padding: 8px;
+    position: absolute; 
+    transform: translateY(11%); 
+}
+
+.descricao4 {
+    background-color: var(--purple-100);
+    grid-area: descricao4;
+    overflow: hidden;
+}
+
+.descricao4 p {
+    font-size: calc(4rem + 1vw);
+    padding: 10% 5%;
+    font-weight: 700;
+}
+
+.descricao4 .diminuir-fonte {
+    font-size: calc(-0.9rem + 1vw);
+    font-weight: 500;
+    text-align: start;
+}
+
+.descricao4 img {
+    max-width: 140%;
+    padding: 5%;
+}
+
+.descricao5 {
+    background-color: var(--purple-500);
+    grid-area: descricao5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.descricao5 p {
+    color: var(--white);
+    font-size: calc(6rem + 1vw);
+    font-weight: 400;
+}
+
+.descricao5 img {
+    width: 50%;
+}
+
+.descricao6 {
+    background-color: var(--white);
+    grid-area: descricao6;
+}
+
+.descricao6 p {
+    font-size: calc(-1rem + 1vw);
+    font-weight: 400;
+}
+
+.descricao6 .fonte-maior {
+    font-size: calc(20rem + 1vw);
+    font-weight: 700;
+}
+
+.descricao6 img {
+    padding-right: 20rem;
+    padding-top: 18%;
+}
+
+.descricao7 {
+    background-color: var(--yellow-100);
+    grid-area: descricao7;
+
+}
+
+.descricao7 p {
+    text-align: start;
+    padding: 15% 0 0% 10%;
+    font-weight: 700;
+    font-size: calc(5rem + 1vw);
+}
+
+.descricao7 em {
+    color: var(--purple-500);
+    font-size: calc(5rem + 1vw);
+    padding: 0;
+}
+
+.descricao7 img {
+    padding: 0;
+    padding: 10%;
+    text-align: center;
+}
+
+.descricao8 {
+    background-color: var(--yellow-500);
+    grid-area: descricao8;
+}
+
+.descricao8 p {
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+    padding: 10% 20% 10% 10%;
+}
+
+.descricao8 img {
+    padding: 7% 2% 2% 2%;
+
+}
+
+.descricao1,
+.descricao2,
+.descricao3,
+.descricao4,
+.descricao5,
+.descricao6,
+.descricao7,
+.descricao8 {
+    line-height: 1;
+    border-radius: 10px;
+    padding: 5%;
+}
